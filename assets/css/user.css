@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* DIV CONTENT */
+.content{
+    height: 100vh;
+    position: relative;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    background: rgb(61,43,125);
+    background: linear-gradient(180deg, rgba(61,43,125,1) 0%, rgba(90,88,166,1) 100%);
+}
+
+/* LOGO */
+.logo img{
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 99;
+}
+
+
+
+/* HERO */
+.background{
+    position: relative;
+    width: 100%;
+	height: 100vh;
+    overflow: hidden;
+    background-image: url('../img/userbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.planet{
+    /* position: relative; */
+    width: 100%;
+    transform: translateY(-800px);
+    z-index: 0;
+}
+.ppl{
+    position: relative;
+    width: 200px;
+}
+
+
+/* SCROLLBAR COSTUMIZATION */
+.simplebar-scrollbar::before{
+    background-color: #444, 30%;
+}
+
+.simplebar-scrollbar{
+    margin-right: 2px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:rgb(234,201,228);
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+
+.userbody{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-request{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.btn-middle{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-middle a button{
+    padding: 20px;
+    background: rgba(1, 1, 1, .3);
+}
+
+.req-history{
+    position: absolute;
+    background: white; 
+    padding: 25px; 
+    width: 400px;
+    border-radius: 20px;
+    height: 250px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+/* .modal-close{
+    position: absolute;
+    font-size: 30px;
+    right: 10px; top: 10px
+} */
+
+.txt-mid{
+    color: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 25%;
+    left: 35%;
+}
+
+.btn-repair, .btn-hard{
+    width: 150px;
+}

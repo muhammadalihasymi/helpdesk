@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: rgb(253,209,226);
+    background: linear-gradient(90deg,rgba(178,182,255,1) 0%,rgba(253,209,226,1) 100%);
+    height: 100%;
+    color: #435587;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 250px;
+    height: 90vh;    
+    background: rgb(224,223,254);
+    border-radius: 5px;
+    position: fixed;
+    left: 30px;
+    top: 50px;
+}
+
+.wrapper .navbar{
+    position: relative;
+}
+
+.menu{
+    padding-top: 25px;
+    /* padding: 25px; */
+    height: 460px;
+}
+
+.menu img{
+    height: 40px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.menu li > a {
+    display: block;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    color: #793c7c;
+    position: relative;
+}
+
+.menu li > a:hover{
+    background: #e1f4ff;
+    color: #1790d4;
+}
+
+.menu li > a span{
+    display: inline-block;
+}
+
+.menu li > a span.icon{
+    margin-right: 10px;
+}
+
+.menu li > a span.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: all 0.3s ease;
+}
+
+.menu li.active > a{
+    color: #b851be;
+}
+
+.acordion-menu{
+    transition: all 0.3s ease;
+    padding-left: 20%;
+    height: 0;
+    overflow: hidden;
+}
+
+.acordion-menu li a{
+    padding-left: 45px;
+    padding: 10px;
+    height: auto;
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.acordion-menu li a:hover{
+    background: #e1f4ff;
+    color: #1790d4;
+}
+
+.acordion-menu li a::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    background: #8c9ba7;
+    border-radius: 50%;
+    transform: translateX(-30px);
+}
+
+.acordion-menu li a:hover::before{
+    background: #1790d4;
+    text-decoration: none;
+}
+
+.menu li.open .am1{
+    height: 180px;
+}
+
+.menu li.open .am2{
+    height: 350px;
+}
+
+.menu li.open a span.arrow{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+
+
+
+.wrapper2{
+    width: 78vw;
+    height: 90vh;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transform: translateX(300px);
+    padding: 20px;
+    z-index: 0;
+    top: 50px;
+}
+
+.navbar-expand{
+    position: relative;
+    transform: translate(20px)
+}
+
+.simplebar-scrollbar::before{
+    background-color: #444, 30%;
+}
+
+.simplebar-scrollbar{
+    margin-right: 2px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:rgb(234,201,228);
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); */
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+
+
+/* CSS EDIT USER */
+.foto-profil{
+    height: 250px;
+    margin-right: 40px;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url('../img/userbg.jpg');
+    background-color: rgb(61,43,125);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 250px;
+    height: 90vh;    
+    background: rgba(8, 8, 8, 0.3);
+    border-radius: 5px;
+    position: fixed;
+    left: 30px;
+    top: 50px;
+}
+
+.wrapper .navbar{
+    position: relative;
+}
+
+.menu{
+    padding-top: 25px;
+    /* padding: 25px; */
+    height: 460px;
+}
+
+.menu img{
+    height: 30px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.menu li > a {
+    display: block;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    color: #d36dd8;
+    position: relative;
+}
+
+.menu li > a:hover{
+    background: #0f0f0f;
+    color: #edd9f1;
+}
+
+.menu li > a span{
+    display: inline-block;
+}
+
+.menu li > a span.icon{
+    margin-right: 10px;
+}
+
+.menu li > a span.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    transition: all 0.3s ease;
+}
+
+.menu li.active > a{
+    color: #edd9f1;
+}
+
+.acordion-menu{
+    transition: all 0.3s ease;
+    padding-left: 20%;
+    height: 0;
+    overflow: hidden;
+}
+
+.acordion-menu li a{
+    padding-left: 45px;
+    padding: 10px;
+    height: auto;
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.acordion-menu li a:hover{
+    background: #e1f4ff;
+    color: #1790d4;
+}
+
+.acordion-menu li a::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    background: #8c9ba7;
+    border-radius: 50%;
+    transform: translateX(-30px);
+}
+
+.acordion-menu li a:hover::before{
+    background: #1790d4;
+    text-decoration: none;
+}
+
+.menu li.open .am1{
+    height: 180px;
+}
+
+.menu li.open .am2{
+    height: 350px;
+}
+
+.menu li.open a span.arrow{
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+
+
+
+.wrapper2{
+    width: 78vw;
+    height: 90vh;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    position: relative;
+    transform: translateX(300px);
+    padding: 20px;
+    z-index: 0;
+    top: 50px;
+}
+
+.navbar-expand{
+    position: relative;
+    transform: translate(20px)
+}
+
+.simplebar-scrollbar::before{
+    background-color: #444, 30%;
+}
+
+.simplebar-scrollbar{
+    margin-right: 2px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:rgb(234,201,228);
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); */
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+
+
+/* CSS EDIT USER */
+.foto-profil{
+    height: 250px;
+    margin-right: 40px;
+}
+
+.ntop{
+    color: rgb(82, 81, 81);
+}
